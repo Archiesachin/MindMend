@@ -1,7 +1,7 @@
 import { Text, View, Image } from 'react-native'
 import React from 'react'
 import { Tabs, Redirect } from 'expo-router'
-import { icons } from "../../constants"
+import { icons } from "../../../constants"
 
 const TabIcon = ({ icon, color, name, focused }) => {
     return (
@@ -66,6 +66,30 @@ const TabsLayout = () => {
                 )
             }}
         />
+
+      <Tabs.Screen
+        name="journal"
+        options={{
+          tabBarButton: () => null,
+          headerShown: false,
+        }}
+      />
+
+    <Tabs.Screen
+        name="todo"
+        options={{
+          tabBarButton: () => null,
+          headerShown: false,
+        }}
+      />
+
+    <Tabs.Screen
+        name="games"
+        options={{
+          tabBarButton: () => null,
+          headerShown: false,
+        }}
+      />
     </Tabs>
     </>
   )
