@@ -90,6 +90,14 @@ const TabsLayout = () => {
           headerShown: false,
         }}
       />
+       <Tabs.Screen
+        name="breathingBubble"
+        options={{
+          tabBarButton: () => null,
+          headerShown: false,
+        }}
+      />
+
     </Tabs>
     </>
   )
