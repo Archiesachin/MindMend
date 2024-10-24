@@ -46,6 +46,7 @@ const CustomDrawerContent = (props) => {
                 onPress={() => {
                     router.push('/(drawer)/(tabs)/home');
                 }}
+                
             />
              <DrawerItem 
                 icon={({ color, size }) => (

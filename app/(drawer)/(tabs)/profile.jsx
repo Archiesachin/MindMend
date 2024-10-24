@@ -46,12 +46,17 @@ const Profile = () => {
         <View style={styles.profileContainer}>
           <Image source={{ uri: userData.profilePic }} style={styles.avatar} /> 
           <Text style={styles.name}>{userData.fullName}</Text>                  
-          <Text style={styles.email}>{userData.providerData.email}</Text>     
+          <Text style={styles.email}>Email : {userData.providerData.email}</Text> 
+          <Text style={styles.email}>Phone Number : {userData.phoneNumber}</Text>
+          <Text style={styles.email}>Age : {userData.age}</Text> 
+          <Text style={styles.email}>Gender : {userData.gender}</Text>
+              
         </View>
       ) : (
         <Text>No user data found.</Text> 
       )}
     </View>
+    
   );
 };
 
